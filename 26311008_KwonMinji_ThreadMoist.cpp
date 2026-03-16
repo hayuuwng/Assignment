@@ -15,7 +15,39 @@
 */
 
 #include <stdio.h>
-int main(void)
 {
+struct Resume{
+char name[20];
+int age;
+char address[50];
+char phone[20];
+char education[50];
+char license[50];
+char military[20];
+char experience[100];
+};
+int main(void){
+struct Resume myResume = {
+  "권민지",                 // 이름
+  20,                       // 나이
+  "경기도 김포시",          // 주소(시군구)
+  "010-5102-2578",          // 연락처
+  "한국it직업전문학교 게임 프로그래밍과",             // 대학교
+  "없음",
+  "해당사항 없음",
+  "애니메이션 원화, 동화, 작화감독 경험 다수 보유"
+};
+
+printf("\n");
+  printf("============================================================\n");
+  printf("                  [ 이     력     서 ]                    \n");
+  printf("============================================================\n");
+
+  printf("■ 인적사항\n");
+    printf("  %-15s : %s\n", "이    름", myResume.name);
+    printf("  %-15s : %d 세\n", "나    이", myResume.age);
+    printf("  %-15s : %s\n", "주    소", myResume.address);
+    printf("  %-15s : %s\n", "연 락 처", myResume.phone);
+  
 return 0;
 }
