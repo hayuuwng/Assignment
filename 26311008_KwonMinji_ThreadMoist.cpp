@@ -33,9 +33,9 @@ struct Resume myResume = {
   "경기도 김포시",          // 주소(시군구)
   "010-5102-2578",          // 연락처
   "운양 고등학교 졸업, 한국it직업전문학교 게임 프로그래밍과 재학중",         //최종학력
-  "없음",    //자격증
+  "없음(jlpt n1 준비중)",    //자격증
   "해당사항 없음", //군필 여부
-  "애니메이션 원화, 동화, 작화감독 경험 다수 보유, 일본어 가능, blender 사용 가능"
+  "애니메이션 원화, 동화, 작화감독 경험 다수 보유, 일본어 가능, blender 사용 가능/n 오버워치 플레티넘, 롤 다이아, 스타크래프트 255승 131패"
 };
 
 printf("\n");
@@ -48,6 +48,18 @@ printf("\n");
     printf("  %-15s : %d 세\n", "나    이", myResume.age);
     printf("  %-15s : %s\n", "주    소", myResume.address);
     printf("  %-15s : %s\n", "연 락 처", myResume.phone);
-  
+
+printf("------------------------------------------------------------\n");
+    
+    printf("■ 학력 및 병역\n");
+    printf("  %-15s : %s (%s)\n", "학    력", myResume.education);
+    printf("  %-15s : %s\n", "병    역", myResume.military);
+
+    printf("------------------------------------------------------------\n");
+
+    printf("■ 보유 역량 및 경험\n");
+    printf("  %-15s : %s\n", "자 격 증", myResume.license);
+    printf("  %-15s : %s\n", "취    미", myResume.hobby);
+    printf("  %-15s : %s\n", "경    력", myResume.experience);  
 return 0;
 }
