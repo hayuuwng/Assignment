@@ -13,3 +13,9 @@
 기사(Knight), 마법사(Mage), 성직자(Priest) 세 캐릭터를 준비하고 각 캐릭터의 HP, MP, EXP를 변수로 선언한 뒤
 다음과 같은 형식으로 출력 각 수치는 float 형을 사용
 */
+
+#include <stdio.h>
+int main(void)
+{
+return 0;
+}
