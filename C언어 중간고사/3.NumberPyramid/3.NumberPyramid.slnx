@@ -1,7 +1,0 @@
-<Solution>
-  <Configurations>
-    <Platform Name="x64" />
-    <Platform Name="x86" />
-  </Configurations>
-  <Project Path="3.NumberPyramid.vcxproj" Id="8100bbbc-bba8-4095-aa48-bbf8a410f189" />
-</Solution>
